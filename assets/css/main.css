@@ -4252,6 +4252,129 @@ input, select, textarea {
 			object-position: right;
 		}
 
+/* Banner (style87) */
+
+.banner.style87 {
+	padding: 7rem 7rem 5rem 7rem ;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	background-color: inherit;
+	position: relative;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+	.banner.style87 .content {
+		position: relative;
+		width: 40rem;
+		max-width: 100%;
+		margin-bottom: 2rem;
+		z-index: 1;
+	}
+
+	.banner.style87 .image {
+		-moz-flex-grow: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-grow: 0;
+		flex-grow: 0;
+		-moz-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		flex-shrink: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 0;
+	}
+
+		.banner.style87 .image img {
+			-moz-object-fit: cover;
+			-webkit-object-fit: cover;
+			-ms-object-fit: cover;
+			object-fit: cover;
+			-moz-object-position: center;
+			-webkit-object-position: center;
+			-ms-object-position: center;
+			object-position: center;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 0;
+		}
+
+	@media screen and (max-width: 1680px) {
+
+		.banner.style87 {
+			padding: 5rem 5rem 3rem 5rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.banner.style87 {
+			padding: 4rem 4rem 2rem 4rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.banner.style87 {
+			padding: 3.75rem 3rem 1.75rem 3rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.banner.style87 {
+			padding: 2.5rem 2rem 0.5rem 2rem ;
+		}
+
+	}
+
+	.banner.style87.fullscreen {
+		min-height: 100vh;
+	}
+
+	.banner.style87.content-align-left {
+		text-align: left;
+	}
+
+	.banner.style87.content-align-right {
+		text-align: right;
+	}
+
+	.banner.style87.image-position-left .image img {
+		-moz-object-position: left;
+		-webkit-object-position: left;
+		-ms-object-position: left;
+		object-position: left;
+	}
+
+	.banner.style87.image-position-right .image img {
+		-moz-object-position: right;
+		-webkit-object-position: right;
+		-ms-object-position: right;
+		object-position: right;
+	}
+
 /* Banner (style5) */
 
 	.banner.style5 {
@@ -5013,6 +5136,184 @@ input, select, textarea {
 			-ms-object-position: right;
 			object-position: right;
 		}
+
+/* Spotlight (style87) */
+.spotlight.style87 {
+	-moz-align-items: -moz-stretch;
+	-webkit-align-items: -webkit-stretch;
+	-ms-align-items: -ms-stretch;
+	align-items: stretch;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-moz-justify-content: -moz-flex-end;
+	-webkit-justify-content: -webkit-flex-end;
+	-ms-justify-content: -ms-flex-end;
+	justify-content: flex-end;
+	position: relative;
+	overflow-x: hidden;
+	text-align: left;
+}
+
+	.spotlight.style87 .content {
+		padding: 7rem 7rem 5rem 7rem ;
+		-moz-align-self: center;
+		-webkit-align-self: center;
+		-ms-align-self: center;
+		align-self: center;
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+		-moz-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+		width: 65%;
+		max-width: 64rem;
+		margin: 0 auto;
+	}
+
+	.spotlight.style87 .image {
+		-moz-flex-grow: 0;
+		-webkit-flex-grow: 0;
+		-ms-flex-grow: 0;
+		flex-grow: 0;
+		-moz-flex-shrink: 0;
+		-webkit-flex-shrink: 0;
+		-ms-flex-shrink: 0;
+		flex-shrink: 0;
+		width: 35%;
+		min-width: 25rem;
+		border-radius: 0;
+	}
+
+		.spotlight.style87 .image img {
+			-moz-object-fit: contain;
+			-webkit-object-fit: contain;
+			-ms-object-fit: contain;
+			object-fit: contain;
+			-moz-object-position: center;
+			-webkit-object-position: center;
+			-ms-object-position: center;
+			object-position: center;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 0;
+		}
+
+	@media screen and (max-width: 1680px) {
+
+		.spotlight.style87 .content {
+			padding: 5rem 5rem 3rem 5rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.spotlight.style87 .content {
+			padding: 4rem 4rem 2rem 4rem ;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.spotlight.style87 .content {
+			padding: 3.75rem 3rem 1.75rem 3rem ;
+			width: 50%;
+			min-width: 0;
+		}
+
+		.spotlight.style87 .image {
+			width: 50%;
+			min-width: 0;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.spotlight.style87 .content {
+			padding: 2.5rem 2rem 0.5rem 2rem ;
+		}
+
+	}
+
+@media screen and (max-width: 736px) and (orientation: portrait) {
+
+	.spotlight.style87 {
+		-moz-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		text-align: center !important;
+	}
+
+		.spotlight.style87 .content {
+			width: 100%;
+		}
+
+		.spotlight.style87 .image {
+			width: 100%;
+		}
+
+			.spotlight.style87 .image img {
+				position: relative;
+			}
+
+}
+
+	.spotlight.style87.orient-right {
+		-moz-flex-direction: row-reverse;
+		-webkit-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+
+@media screen and (max-width: 736px) and (orientation: portrait) {
+
+	.spotlight.style87.orient-right {
+		-moz-flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+}
+
+	.spotlight.style87.content-align-center {
+		text-align: center;
+	}
+
+	.spotlight.style87.content-align-right {
+		text-align: right;
+	}
+
+	.spotlight.style87.image-position-left .image img {
+		-moz-object-position: left;
+		-webkit-object-position: left;
+		-ms-object-position: left;
+		object-position: left;
+	}
+
+	.spotlight.style87.image-position-right .image img {
+		-moz-object-position: right;
+		-webkit-object-position: right;
+		-ms-object-position: right;
+		object-position: right;
+	}
+
 
 /* Spotlight (style2) */
 
