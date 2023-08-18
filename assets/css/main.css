@@ -2686,6 +2686,11 @@ input, select, textarea {
 				border-radius: 0;
 				width: 100%;
 			}
+
+			.spotlight .image iframe {
+				border-radius: 0;
+				width: 100%;
+			}
 			
 		.spotlight .smallimage {
 			-moz-order: 1;

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Original template:
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Modified by Jacob Beyer for my personal use.
+-->
+<html>
+	<head>
+		<title>Jacob Beyer: Intelligent Robotic Systems</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="">
+						<h1><a href="index.html">Jacob Beyer</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About Me</a></li>
+											<li><a href="project-thesis.html">Thesis</a></li>
+											<li><a href="project-gm.html">GM Internship</a></li>
+											<li><a href="project-346.html">Intelligent Robotic Systems</a></li>
+											<li><a href="project-carlab.html">Carlab</a></li></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+                    <!-- <section id="banner">
+                        <div class="inner">
+                            <h2>About Me</h2>
+                        </div>
+                    </section> -->
+
+					
+					<section id="one" class="wrapper style5 special">
+						<div class="inner">
+							<!-- <header class="major"> -->
+								<h2><br>Intelligent Robotic Systems</h2>
+							<!-- </header> -->
+						</div>
+					</section>
+
+
+					<!-- One -->
+					<section id="one" class="wrapper style5 alt">
+                        <section class="spotlight">
+							<div class="image">
+								<img src="images/gallery/fulls/trucklab truck.jpg" alt="" />
+							</div>
+							<div class="content">
+								<p>
+									<a href="https://registrar.princeton.edu/course-offerings/course-details?term=1234&courseid=016252" target="_blank">Intelligent Robotic Systems</a> is the culmination of the undergraduate robotics sequence at Princeton. Lecture topics include advanced motion planning using iterative linear quadratic regulators (ILQR) and model predictive control, value and policy iteration for optimal decision making in Markov decision processes, machine learning techniques for robotics, and interactions in multi-agent (robot-human and robot-robot) systems. And unlike <a href="project-carlab.html">Carlab</a>, where the focus is on building a system from the ground up, the labs in this course focus on applications of these advanced techniques. 
+								</p>
+                                <p>
+                                    As such, when I took the course in my senior year, we started with a completely-built robotic truck capable of <a href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping" target="_blank">SLAM</a> and a miniature city environment with a defined cost function. Working in a team of three, we were tasked with navigating a race track as fast as possible while avoiding randomly-placed obstacles for our final project. With the powerful computer available on board the truck, we broke the task down to take advantage of hierarchical planning.
+                                </p>
+							</div>
+                        </section>
+						<section class="spotlight">
+							<div class="image">
+								<img src="images/gallery/fulls/346_task1.png" alt="" />
+							</div>
+							<div class="content">
+								<p>
+									At the highest level of the hierarchy was a reference path. Using a routing function provided for the course, we queried for a path between the truck's current position and the next checkpoint on the racetrack. This provided a nominal trajectory that followed the contour of the track, but did not account for obstacles. The next layer of the planning hierarchy provided coarse obstacle avoidance: for each pose along the nominal trajectory, the closest obstacle was located using a KD tree, and if the obstacle would intersect the truck at that pose, the nominal trajectory was modified. Since the race track had two lanes, we computed which lane the obstacle was in and swapped the nominal trajectory to the other lane to avoid it.
+								</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image">
+								<!-- <img src="images/gallery/fulls/gm_block_diagram.png" alt="" /> -->
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OyU0YVuB6uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p>
+									At the lowest level of the hierarchy, we used a receding-horizon ILQR planner to calculate an optimal trajectory and control input sequence around this modified nominal trajectory. We tuned the cost parameters specifically to the challenge of racing by heavily penalizing deviations from the reference speed. This produced a control sequence that aggressively handled its way around the track while still providing robust obstacle avoidance on top of the coarse-grained adjustments to the nominal trajectory.
+								</p>
+								<p>
+									The result was a first-place time among all other teams on the race track on the final demonstration day. As the member of my trio with the most intuitive understanding of ILQR, I led the development of the receding horizon planner code and assisted with the parameter tuning. Additionally, I created the algorithm that would lead to a record-breaking score on the second task of the final project, a simulated delivery truck scenario involving overtaking another agent in a multi-robot system. The experience of seeing the truck move quickly around the obstacle course at the final demonstration was exhilarating, especially considering the engineering challenges that had to be overcome to make it happen.
+								</p>
+							</div>
+						</section>
+					</section>
+<!-- 
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/gallery/fulls/full laser map.png" alt=""></span></div>
+						</div>
+					</div> -->
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="index.html" class="icon solid style2 fa-house-user"><span class="label">Home</span></a></li>
+							<li><a href="https://www.linkedin.com/in/jacob-beyer/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:jrbeyer@princeton.edu" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2023 Jacob Beyer</li><li>Design by <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		</body>
+</html>
