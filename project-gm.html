@@ -9,7 +9,7 @@
 -->
 <html>
 	<head>
-		<title>Jacob Beyer: Thesis</title>
+		<title>Jacob Beyer: GM Internship</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -53,7 +53,7 @@
 					<section id="one" class="wrapper style5 special">
 						<div class="inner">
 							<!-- <header class="major"> -->
-								<h2><br>Thesis</h2>
+								<h2><br>GM Summer Internship</h2>
 							<!-- </header> -->
 						</div>
 					</section>
@@ -64,43 +64,35 @@
 					<section id="one" class="wrapper style5 alt">
                         <section class="spotlight">
 							<div class="image">
-								<img src="images/gallery/fulls/lab setup.jpg" alt="" />
+								<img src="images/gallery/fulls/gm_engine.jpg" alt="" />
 							</div>
 							<div class="content">
 								<p>
-									My senior thesis, "A Kalman Filter Approach to Automated Mid-Infrared Beam Mapping: Quantum Cascade Laser Far-Field Patterns," was an opportunity for me to apply my interests in control theory and robotics to a totally new (to me) domain: optics and lasers. The crux of the thesis is a proposal for a <a href="https://en.wikipedia.org/wiki/Kalman_filter" target="_blank">Kalman filter</a>-based algorithm for the measurement of the far-field pattern of mid-infrared beams, and the construction and demonstration of a device capable of executing the algorithm. Such measurements are especially important because mid-IR beams, with applications in environmental sensing and long-distance communications, are invisible to the human eye.
+									During the summer before beginning my Master's degree, I worked as a software engineering intern for General Motors in the Vehicle Mechatronics Embedded Controls group. My team worked on the software for the next generation of engine control modules, designing fuel injection strategies to meet or exceed new emissions standards and make all vehicles run more efficiently. This required an increasingly complex fuel injection system, one that was outpacing the limits of manual component testing.
 								</p>
 							</div>
                         </section>
 						<section class="spotlight">
-							<div class="image">
-								<img src="images/gallery/fulls/Experiments 1 and 2 mechanical.png" alt="" />
+							<div class="smallimage">
+								<img src="images/gallery/fulls/FCM test case automation flowchart words pixelated.png" alt="Text pixelated out of intellectual property respect." />
 							</div>
-							<div class="content">
+							<div class="widecontent">
 								<p>
-									After discussing a number of potential thesis topics with my advisor, <a href="https://ece.princeton.edu/people/claire-gmachl" target="_blank">Professor Claire Gmachl</a>, I had the idea for what would become my thesis in a true “shower thought” -- assuming a Gaussian beam profile (a reasonable approximation for most beams), one could construct an increasingly accurate estimate of the position and shape of the beam in cross-sections along the direction of propagation by fitting randomly-sampled measurements to a Gaussian distribution. That new Gaussian would be the distribution from which new candidate measurement locations would be sampled, resulting in a converging estimate of the beam profile. This is the same principle that underlies the Kalman filter, a tool for state estimation in robotics where Gaussian uncertainty exists in measurement and position.
+									My role on the team was to research and design automated methods of testing the fuel injection system. Building on the hardware-in-the-loop infrastructure already in place in the laboratory, I created a prototype for a testing suite that would handle more than 60% of the 800+ test cases that had been identified as business-critical, saving hundreds of hours in manual testing time. Additionally, I extensively documented the testing system with over 60 pages of detailed information on how the system worked, and ways to implement improvements that would bring it to 100% test coverage.
 								</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image">
-								<img src="images/gallery/fulls/3d angled.png" alt="" />
+								<img src="images/gallery/fulls/gm_block_diagram.png" alt="" />
 							</div>
 							<div class="content">
 								<p>
-									One aspect of my thesis I am particularly proud of are the data visualizations I created. Working with data that I collected gave me the creativity to display them however I saw fit, and some of the results are shown here. These graphs show the intensity of a single profile of the laser (with intensity plotted on the z axis), as well as the intensities of multiple profiles in 3D space. In the context of the paper, my data visualizations play a strong role in justifying the functionality of the system.
+									My legacy on the team extends further. At the end of my internship, I designed high-level strategies for bringing automation to other projects and presented my findings to Director-level managers. In addition to the tools I deployed, the automation frameworks and strategies I developed will continue to make a difference to the team as they work to create more eco-friendly engines.
 								</p>
 								<p>
-									The paper was the recipient of the Princeton Department of Electrical and Computer Engineering's <a href="https://ece.princeton.edu/news/class-day-faculty-celebrate-cohort-will-lead-rapidly-changing-world#:~:text=Jacob%20Beyer%20won%20the%20Bradley%20Dickinson%20Award%20for%20System%20Design%2C%20awarded%20for%20outstanding%20accomplishments%20in%20the%20design%20and%20implementation%20of%20complex%20electronic%20systems." target="_blank">Bradley Dickinson Award for System Design</a>, “awarded for outstanding accomplishments in the design and implementation of complex electronic systems.” A version of the paper is currently being prepared for submission to IEEE Transactions on Instrumentation and Measurement.
+									This was a challenging internship project, with a large scope in a short timeframe. I had to think creatively to find ways of interacting with different software components through poorly-documented APIs. By communicating my concerns to other team members early in the design process, I was able to locate a GM internal tool that would assist in tying together the software components and hardware-in-the-loop element while simultaneously increasing the maintainability of my code.
 								</p>
-							</div>
-						</section>
-					</section>
-
-					<section class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="fullsizeimage">
-								<img src="images/gallery/fulls/full laser map.png" alt="">
 							</div>
 						</section>
 					</section>
