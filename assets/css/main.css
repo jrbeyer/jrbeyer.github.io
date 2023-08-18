@@ -2820,6 +2820,19 @@ input, select, textarea {
 					width: 100%;
 				}
 
+				.spotlight .smallimage {
+					/* align-items: center;
+					background-position: center; */
+					width: 100%;
+				}
+
+				.spotlight .widecontent {
+					padding: 4em 3em 2em 3em ;
+					max-width: none;
+					text-align: center;
+					width: 100%;
+				}
+
 		}
 
 		@media screen and (max-width: 736px) {
