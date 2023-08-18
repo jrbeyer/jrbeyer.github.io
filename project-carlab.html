@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Original template:
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Modified by Jacob Beyer for my personal use.
+-->
+<html>
+	<head>
+		<title>Jacob Beyer: Carlab</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="">
+						<h1><a href="index.html">Jacob Beyer</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About Me</a></li>
+											<li><a href="project-thesis.html">Thesis</a></li>
+											<li><a href="project-gm.html">GM Internship</a></li>
+											<li><a href="project-346.html">Intelligent Robotic Systems</a></li>
+											<li><a href="project-carlab.html">Carlab</a></li></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+                    <!-- <section id="banner">
+                        <div class="inner">
+                            <h2>About Me</h2>
+                        </div>
+                    </section> -->
+
+					
+					<section id="one" class="wrapper style5 special">
+						<div class="inner">
+							<!-- <header class="major"> -->
+								<h2><br>Carlab</h2>
+							<!-- </header> -->
+						</div>
+					</section>
+
+
+					<!-- One -->
+					<section id="one" class="wrapper style5 alt">
+                        <section class="spotlight">
+							<div class="image">
+								<img src="images/gallery/fulls/carlab_car.png" alt="" />
+							</div>
+							<div class="content">
+								<p>
+									“Carlab” (or more formally, <a href="https://registrar.princeton.edu/course-offerings/course-details?term=1224&courseid=002472" target="_blank">Robotic and Autonomous Systems Lab</a>) is a core aspect of the curriculum for every Princeton ECE undergrad -- a lab course taken junior year where the goal is to build a functioning autonomous system from the ground up. Pairs of lab partners are given a miniature car chassis with an electric motor and battery, and a Cypress PSoC microcontroller with I/O breakouts. The rest of the system is up to the team -- sensor choices, circuit design and soldering, controller programming, and even laser cutting acrylic mounts to bring everything together are the responsibility of the students. The course begins with two common checkpoints -- Speed Control, to move the car at a consistent velocity, and Navigation, to follow a prescribed path around the lab -- before culminating in a final project of the pair’s choice. 
+								</p>
+                                <p>
+                                    After successfully completing the first two tasks, my lab partner and I chose to expand the functionality of our car by adding parallel parking. Furthermore, we wanted to include the capability to select from a range of parking slots coded by colored signposts. The end goal of our final project was to wirelessly command a parking slot to the car, have the car drive around the track (from the Navigation task) to the parking slots, and parallel park itself before coming to a stop. To do this, we had to make several modifications to the vehicle's sensors, actuators, and software.
+                                </p>
+							</div>
+                        </section>
+						<section class="spotlight">
+							<div class="image">
+								<img src="images/gallery/fulls/carlab_cameraboard_schematic.jpg" alt="" />
+							</div>
+							<div class="content">
+								<p>
+									In order to detect the signposts denoting the parking slots, we added a side-mounted PixyCam camera because of its excellent color detection. Signal processing for this camera was accomplished by adding an Arduino to the system. This offloaded the processing from the main microprocessor while also granting access to the libraries available for the PixyCam on Arduino, all for a low cost. Two ultrasonic range sensors were added to the front and rear of the chassis to close the loop on the parallel parking algorithm. This allowed the vehicle to rapidly park itself while avoiding a collision with the walls of the parking space. Finally, due to the move from one-directional motion to two-directional motion, our original motor driver was replaced with an H-bridge capable of powering the motor in either direction.
+								</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image">
+								<!-- <img src="images/gallery/fulls/gm_block_diagram.png" alt="" /> -->
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_7KulXTX1hM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p>
+									As the software expert in my team, I took the lead on restructuring our controller algorithm to incorporate the added complexity of parallel parking. I was responsible for communicating with the Arduino from the main microprocessor to determine when to begin the parking maneuver, as well as digitally processing the ultrasonic range finder signals to command the correct steering angle and throttle output to bring the car into the parking spot. This was a challenging task, but also one that helped me realize my love of embedded computing. Working so close to the hardware/software interface was a great way to tie together many of the disparate areas of ECE I had studied to that point -- circuits, algorithms, computer engineering, and signal processing all came together in a holistic system built from the ground up.
+								</p>
+								<p>
+									And of course, it could park itself.
+								</p>
+							</div>
+						</section>
+					</section>
+<!-- 
+					<div class="box alt">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-12"><span class="image fit"><img src="images/gallery/fulls/full laser map.png" alt=""></span></div>
+						</div>
+					</div> -->
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="index.html" class="icon solid style2 fa-house-user"><span class="label">Home</span></a></li>
+							<li><a href="https://www.linkedin.com/in/jacob-beyer/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:jrbeyer@princeton.edu" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2023 Jacob Beyer</li><li>Design by <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		</body>
+</html>
