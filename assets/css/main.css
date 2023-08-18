@@ -5,6 +5,8 @@
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Modified by Jacob Beyer for my personal use.
 */
 
 html, body, div, span, applet, object,
@@ -2684,6 +2686,20 @@ input, select, textarea {
 				border-radius: 0;
 				width: 100%;
 			}
+			
+		.spotlight .smallimage {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 30%;
+		}
+
+			.spotlight .smallimage img {
+				border-radius: 0;
+				width: 100%;
+			}
 
 		.spotlight .fullsizeimage {
 			-moz-order: 1;
@@ -2707,6 +2723,16 @@ input, select, textarea {
 			order: 2;
 			max-width: 48em;
 			width: 60%;
+		}
+
+		.spotlight .widecontent {
+			padding: 2em 4em 0.1em 4em ;
+			-moz-order: 2;
+			-webkit-order: 2;
+			-ms-order: 2;
+			order: 2;
+			max-width: 48em;
+			width: 70%;
 		}
 
 		.spotlight:nth-child(2n) {
